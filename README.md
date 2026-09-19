@@ -1,31 +1,31 @@
 # UNMSM Research Methods 2026-II
 
-Repositorio de entregables del curso **Research Methods and Scientific Integrity in AI and Advanced Technologies**, del **Doctoral Program in Deep Tech, Artificial Intelligence & Emerging Technologies** de la Universidad Nacional Mayor de San Marcos (UNMSM).
+Repository of deliverables for the course **Research Methods and Scientific Integrity in AI and Advanced Technologies**, part of the **Doctoral Program in Deep Tech, Artificial Intelligence & Emerging Technologies** at Universidad Nacional Mayor de San Marcos (UNMSM).
 
-- **Docente:** Dr. Loveleen Gaur
-- **Estudiante:** Eng. Jesus Vicente Inca Cardenas
-- **Periodo académico:** 2026-II
+- **Course Instructor:** Dr. Loveleen Gaur
+- **Student:** Eng. Jesus Vicente Inca Cardenas
+- **Term:** 2026-II
 
-## Tema de investigación
+## Research topic
 
-Los entregables del curso desarrollan progresivamente una misma propuesta doctoral:
+The course deliverables progressively develop the same doctoral proposal:
 
 > *"A Verifiable Generative Artificial Intelligence Model for Contractual Clause Recommendation in Regulated Fiduciary Institutions"*
 
-El proyecto busca diseñar y evaluar un artefacto de IA generativa capaz de recomendar cláusulas contractuales en una institución fiduciaria supervisada por la SBS, garantizando que cada recomendación sea **trazable a una fuente normativa o contractual contrastable** (verificabilidad), y comparando su desempeño frente a un baseline estándar de RAG (Retrieval-Augmented Generation) en cuanto a control de alucinaciones y calidad de recomendación.
+The project aims to design and evaluate a generative AI artefact capable of recommending contractual clauses in an SBS-supervised fiduciary institution, ensuring that every recommendation is **traceable to a contrastable normative or contractual source** (verifiability), and benchmarking its performance against a standard RAG (Retrieval-Augmented Generation) baseline on hallucination control and recommendation quality.
 
-## Estructura del repositorio
+## Repository structure
 
-| Carpeta | Entregable | Contenido |
+| Folder | Deliverable | Content |
 |---|---|---|
-| [`01_Paradigm_Justification`](01_Paradigm_Justification/README.md) | Deliverable No. 1 | Declaración de justificación del paradigma epistemológico (Design Science Research + realismo crítico) |
-| [`02_Method_Fit_Matrix`](02_Method_Fit_Matrix/README.md) | Deliverable No. 2 | Matriz de ajuste metodológico comparando Experimento Puro, Estudio de Caso, Métodos Mixtos y Design Science Research |
+| [`01_Paradigm_Justification`](01_Paradigm_Justification/README.md) | Deliverable No. 1 | Statement of epistemological paradigm justification (Design Science Research + critical realism) |
+| [`02_Method_Fit_Matrix`](02_Method_Fit_Matrix/README.md) | Deliverable No. 2 | Method fit matrix comparing Pure Experiment, Pure Case Study, Mixed Methods, and Design Science Research |
 
-Cada carpeta contiene su propio `README.md` con el resumen del PDF correspondiente.
+Each folder contains its own `README.md` summarizing the corresponding PDF.
 
-## Cómo avanza la investigación entre entregables
+## How the research progresses across deliverables
 
-1. **Deliverable 1** fija el paradigma (Design Science Research bajo realismo crítico), la pregunta de investigación preliminar y la operacionalización del concepto central de *verificabilidad*.
-2. **Deliverable 2** traduce ese paradigma en una decisión metodológica concreta: evalúa cuatro métodos candidatos contra criterios ponderados (ajuste epistemológico, viabilidad de datos, factibilidad, contribución, ajuste de venue) y selecciona formalmente **Design Science Research** como método rector, acotando el alcance a un prototipo, una institución y 2-3 resultados primarios.
+1. **Deliverable 1** establishes the paradigm (Design Science Research under critical realism), the preliminary research question, and the operationalization of the central *verifiability* construct.
+2. **Deliverable 2** translates that paradigm into a concrete methodological decision: it evaluates four candidate methods against weighted criteria (epistemological fit, data feasibility, feasibility, contribution, venue fit) and formally selects **Design Science Research** as the governing method, scoping the study to one prototype, one institution, and 2–3 primary outcomes.
 
-> **Nota de confidencialidad:** todo el contenido usa datos institucionales, normativos y de ejemplo en el marco de un trabajo académico. No se debe incorporar información real de clientes, contratos u operaciones sin anonimizar, conforme a la política de uso corporativo de datos.
+> **Confidentiality note:** all content uses institutional, regulatory, and example data within an academic assignment. No real, non-anonymized client, contract, or transaction information should be included, in line with the corporate data-use policy.

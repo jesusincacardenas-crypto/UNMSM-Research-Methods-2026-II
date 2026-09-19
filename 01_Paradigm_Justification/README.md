@@ -1,49 +1,49 @@
 # 01 · Paradigm Justification (Deliverable No. 1)
 
-**Archivo:** `Epistemological_Statement.pdf`
+**File:** `Epistemological_Statement.pdf`
 
-## Resumen
+## Summary
 
-Declaración de justificación del paradigma epistemológico para la tesis doctoral *"A Verifiable Generative Artificial Intelligence Model for Contractual Clause Recommendation in Regulated Fiduciary Institutions"*.
+Statement of epistemological paradigm justification for the doctoral thesis *"A Verifiable Generative Artificial Intelligence Model for Contractual Clause Recommendation in Regulated Fiduciary Institutions"*.
 
-### Paradigma adoptado
-- **Design Science Research (DSR)**, fundamentado filosóficamente en **realismo crítico** (Bhaskar), en lugar del pragmatismo habitual en DSR.
-- Distingue los dominios de lo *real* (mecanismos generativos: marco regulatorio SBS, lógica legal de cláusulas, comportamiento del modelo), lo *actual* (eventos como la generación de una cláusula o una alucinación) y lo *empírico* (lo observable/medible por el investigador).
+### Adopted paradigm
+- **Design Science Research (DSR)**, philosophically grounded in **critical realism** (Bhaskar), rather than the pragmatism commonly paired with DSR.
+- Distinguishes the domains of the *real* (generative mechanisms: the SBS regulatory framework, the legal logic of clauses, model behaviour), the *actual* (events such as clause generation or the emergence of a hallucination), and the *empirical* (what the researcher can observe/measure).
 
-### Por qué realismo crítico y no pragmatismo
-1. El objeto de estudio es genuinamente estratificado (mecanismos causales reales aunque no se observen).
-2. La verificabilidad exige un fundamento independiente de la mente (la norma o cláusula fuente debe existir con contenido propio).
-3. El fallibilismo encaja con un artefacto estocástico evaluado contra un estándar legal contestable ("objetividad modificada").
+### Why critical realism rather than pragmatism
+1. The object of study is genuinely stratified (causal mechanisms are real even when not observed).
+2. Verifiability presupposes a mind-independent foundation (the source norm or clause must exist with content of its own).
+3. Fallibilism fits a stochastic artefact evaluated against a contestable legal standard ("modified objectivity").
 
-### Pregunta de investigación preliminar
-- **Principal:** ¿Cómo diseñar un artefacto de IA generativa verificable para recomendar cláusulas contractuales de modo que toda recomendación sea trazable a una fuente normativa/contractual contrastable, y supera dicho artefacto a un baseline RAG estándar en verificabilidad y control de alucinaciones sin perder calidad?
-- **RQ1 (diseño):** principios de diseño para un artefacto de recomendación de cláusulas verificable en un entorno fiduciario supervisado por la SBS.
-- **RQ2 (evaluación):** ¿logra el artefacto mayor calidad de atribución y menor tasa de alucinaciones que (a) baseline sin recuperación, (b) RAG estándar y (c) práctica institucional actual, manteniendo la calidad de recomendación?
+### Preliminary research question
+- **Main question:** How can a verifiable generative AI artefact be designed to recommend contractual clauses so that every recommendation is traceable to a contrastable normative/contractual source, and does it outperform a standard RAG baseline in verifiability and hallucination control without loss of quality?
+- **RQ1 (design):** design principles for a verifiable clause-recommendation artefact in an SBS-supervised fiduciary setting.
+- **RQ2 (evaluation):** does the artefact achieve higher attribution quality and lower hallucination rates than (a) a no-retrieval baseline, (b) standard RAG, and (c) current institutional practice, while maintaining recommendation quality?
 
-### Datos, métodos y contribución
-- **Datos:** corpus anonimizado de contratos/cláusulas fiduciarias, corpus regulatorio (normas SBS, Ley 26702) y un gold standard anotado.
-- **Métodos:** ciclo DSR de Peffers et al. (2007), con evaluación cuantitativa mediante comparación controlada y anotación humana.
-- **Contribución dual** (Gregor & Hevner, 2013): principios de diseño prescriptivos + evidencia empírica del efecto de una capa explícita de verificabilidad.
-- **Venues objetivo:** MIS Quarterly, JAIS, EJIS, DESRIST; Artificial Intelligence and Law, ICAIL/JURIX; venues de NLP sobre atribución y factualidad.
+### Data, methods, and contribution
+- **Data:** anonymised corpus of fiduciary contracts/clauses, regulatory corpus (SBS norms, Ley 26702), and an annotated gold standard.
+- **Methods:** DSR cycle after Peffers et al. (2007), with quantitative evaluation via controlled comparison and human annotation.
+- **Dual contribution** (Gregor & Hevner, 2013): prescriptive design principles + empirical evidence of the effect of an explicit verifiability layer.
+- **Target venues:** MIS Quarterly, JAIS, EJIS, DESRIST; Artificial Intelligence and Law, ICAIL/JURIX; NLP venues on attribution and factuality.
 
-### Operacionalización de la verificabilidad
-- Basada en el concepto de *atribución* (Rashkin et al., 2023): una proposición es atribuible a una fuente si un lector razonable afirmaría "Según P, s".
-- Métricas: *citation precision/recall* (Gao et al., 2023) y juicios humanos de atribuibilidad a nivel de fragmento (span-level).
-- Alucinación definida como: (i) no atribuible, (ii) mal atribuida, o (iii) contradictoria con el marco regulatorio.
+### Operationalising verifiability
+- Grounded in the concept of *attribution* (Rashkin et al., 2023): a proposition is attributable to a source if a reasonable reader would affirm "According to P, s."
+- Metrics: citation precision/recall (Gao et al., 2023) and human span-level attributability judgments.
+- Hallucination defined as: (i) unsupported, (ii) misattributed, or (iii) contradicting the governing regulatory framework.
 
-### Gold standard y análisis estadístico
-- Construido por al menos 2-3 abogados especializados en materia fiduciaria/regulación financiera, con acuerdo inter-anotador (Cohen's κ o Krippendorff's α ≥ 0.67, idealmente ≥ 0.80).
-- Comparación de 4 condiciones: B0 (sin recuperación), B1 (RAG estándar), B2 (artefacto propuesto), B3 (práctica institucional actual).
-- Pruebas pareadas (McNemar, bootstrap pareado), corrección de error por comparaciones múltiples (Holm–Bonferroni / Benjamini–Hochberg), reporte de tamaños de efecto e intervalos de confianza.
+### Gold standard and statistical analysis
+- Built by at least 2–3 lawyers with fiduciary/financial-regulation expertise, with inter-annotator agreement (Cohen's κ or Krippendorff's α ≥ 0.67, ≥ 0.80 preferred).
+- Comparison of 4 conditions: B0 (no retrieval), B1 (standard RAG), B2 (proposed artefact), B3 (current institutional practice).
+- Paired statistical tests (McNemar's test, paired bootstrap), multiple-comparison correction (Holm–Bonferroni / Benjamini–Hochberg), effect sizes and confidence intervals reported.
 
-### Riesgo legal y supervisión humana
-- Marco legal aplicable: secreto bancario (Ley 26702, art. 140) y protección de datos personales (Ley 29733).
-- Implicaciones de diseño: anonimización/pseudonimización de datos, preferencia por despliegue local/on-premise, y evaluación de impacto de protección de datos si hay procesamiento externo.
-- El artefacto es **explícitamente asesor**: la autoridad final sobre cualquier cláusula adoptada recae en un oficial legal calificado.
+### Legal risk and human oversight
+- Applicable legal framework: banking secrecy (Ley 26702, art. 140) and personal data protection (Ley 29733).
+- Design implications: de-identification/pseudonymisation of contract data, preference for on-premise deployment, and a data-protection impact assessment if any external processing occurs.
+- The artefact is **explicitly advisory**: final authority over any adopted clause remains with a qualified legal officer.
 
-### Transferibilidad y novedad
-- Transferibilidad reclamada como generalización analítica (principios de diseño), no estadística, validada por panel de expertos y, de ser posible, una segunda instanciación.
-- La afirmación de que no existe un modelo similar en la literatura ni en el Estado peruano se sustentará con una revisión sistemática estilo PRISMA (Scopus, Web of Science, IEEE Xplore, ACL Anthology, SSRN).
+### Transferability and novelty
+- Transferability claimed as analytical generalisation (design principles), not statistical generalisation, validated by an expert panel and, if possible, a second-site instantiation.
+- The claim that no comparable model exists in the literature or the Peruvian State will be supported by a PRISMA-style systematic review (Scopus, Web of Science, IEEE Xplore, ACL Anthology, SSRN).
 
-### Tensión abierta
-Verificabilidad ≠ corrección: una cláusula puede ser perfectamente atribuible a una fuente desactualizada o legalmente errónea. La tesis tratará la corrección como una dimensión distinta de la atribución, y declarará la verificabilidad como condición necesaria pero no suficiente.
+### Open tension
+Verifiability ≠ correctness: a clause can be perfectly attributable to an outdated or legally mistaken source. The thesis will treat correctness as a dimension distinct from attribution, and will state verifiability as a necessary but not sufficient condition for trustworthiness.

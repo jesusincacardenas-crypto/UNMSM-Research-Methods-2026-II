@@ -1,6 +1,6 @@
 {
   "experiment": "UNMSM-D5-clause-reproducibility",
-  "git_commit": "90af60657cd516ae52321df2c1d1c924d1fb7314",
+  "git_commit": "e7973cb0e5f60234de015092763563eac28cc460",
   "git_dirty": true,
   "data": {
     "file": "data/ledgar_subset.csv",

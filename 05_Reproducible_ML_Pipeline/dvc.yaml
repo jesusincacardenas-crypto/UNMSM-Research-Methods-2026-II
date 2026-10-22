@@ -1,0 +1,28 @@
+stages:
+  prepare:
+    cmd: python src/prepare_data.py
+    deps:
+      - src/prepare_data.py
+    params:
+      - prepare
+    outs:
+      - data/ledgar_subset.csv          # cached by DVC; its MD5 is pinned in dvc.lock
+      - data/dataset_card.json:
+          cache: false
+
+  seeds:
+    cmd: python src/run_seeds.py
+    deps:
+      - src/run_seeds.py
+      - src/train.py
+      - data/ledgar_subset.csv
+    params:
+      - train
+    outs:
+      - results:                        # Git-tracked (cache: false) so readers see the numbers
+          cache: false
+      - figures:
+          cache: false
+
+metrics:
+  - results/metrics.json

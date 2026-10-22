@@ -1,0 +1,86 @@
+{
+  "ex1_fancy": 0.9198756930500561,
+  "ex1_weak": 0.7196514607111151,
+  "ex1_strong": 0.9119231596947766,
+  "best_C": 100.0,
+  "ex2_mean": 0.9275821100314866,
+  "ex2_sd": 0.005270310235644522,
+  "ex2_min": 0.9204425829504812,
+  "ex2_max": 0.9387560033637984,
+  "ex7_fancy": 0.9275821100314866,
+  "ex7_fancy_sd": 0.005270310235644522,
+  "ex7_base": 0.9153631297794537,
+  "ex7_base_sd": 0.005344246591727268,
+  "ex7_diff": 0.012218980252033117,
+  "ex7_t": 7.480364633634266,
+  "ex7_tp": 3.769683175358162e-05,
+  "ex7_wp": 0.001953125,
+  "mcnemar_b": 20,
+  "mcnemar_c": 13,
+  "mcnemar_p": 0.296206368599087,
+  "boot_lo": -0.006690527905099228,
+  "boot_hi": 0.023231801597933366,
+  "ex9_chance": 0.05,
+  "ex9_leaky": 0.09366666666666668,
+  "ex9_honest": 0.044000000000000004,
+  "ablation": [
+    {
+      "Configuration": "FULL model",
+      "Macro-F1 (mean)": 0.92881,
+      "Std": 0.00225,
+      "\u0394 vs full": 0.0
+    },
+    {
+      "Configuration": "- remove bigrams",
+      "Macro-F1 (mean)": 0.92669,
+      "Std": 0.00281,
+      "\u0394 vs full": -0.00212
+    },
+    {
+      "Configuration": "- remove sublinear tf",
+      "Macro-F1 (mean)": 0.92212,
+      "Std": 0.00344,
+      "\u0394 vs full": -0.00669
+    },
+    {
+      "Configuration": "- remove IDF weighting",
+      "Macro-F1 (mean)": 0.92068,
+      "Std": 0.00559,
+      "\u0394 vs full": -0.00814
+    },
+    {
+      "Configuration": "- remove min_df filter",
+      "Macro-F1 (mean)": 0.92873,
+      "Std": 0.00275,
+      "\u0394 vs full": -9e-05
+    }
+  ],
+  "ablation_p": [
+    {
+      "Configuration": "- remove bigrams",
+      "Paired p (vs full)": 0.00715
+    },
+    {
+      "Configuration": "- remove sublinear tf",
+      "Paired p (vs full)": 0.0097
+    },
+    {
+      "Configuration": "- remove IDF weighting",
+      "Paired p (vs full)": 0.01276
+    },
+    {
+      "Configuration": "- remove min_df filter",
+      "Paired p (vs full)": 0.94847
+    }
+  ],
+  "compute": {
+    "250": 0.8602,
+    "500": 0.88929,
+    "1000": 0.91282,
+    "2000": 0.92137,
+    "5000": 0.92475,
+    "20000": 0.92893,
+    "50000": 0.92881
+  },
+  "scorecard": "8/8"
+}

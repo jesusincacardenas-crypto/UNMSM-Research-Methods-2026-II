@@ -1,2 +1,5 @@
 [core]
     autostage = true
+    remote = storage
+['remote "storage"']
+    url = C:/JesusInca/dvc_remote_d5

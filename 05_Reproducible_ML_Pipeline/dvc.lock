@@ -1,0 +1,63 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare_data.py
+    deps:
+    - path: src/prepare_data.py
+      hash: md5
+      md5: 2cf147625de2b29d807d3af746f8c3a0
+      size: 3533
+    params:
+      params.yaml:
+        prepare:
+          hf_revision: c23fdff1a6bf74e0e1a71cb86f1e781d37da888c
+          n_classes: 20
+          per_class: 150
+          sample_seed: 2026
+    outs:
+    - path: data/dataset_card.json
+      hash: md5
+      md5: 88851176947fa0dc0ee3d125cbaf0c97
+      size: 1331
+    - path: data/ledgar_subset.csv
+      hash: md5
+      md5: bc995ef9bacb814a07d06dbecad47ad0
+      size: 2160863
+  seeds:
+    cmd: python src/run_seeds.py
+    deps:
+    - path: data/ledgar_subset.csv
+      hash: md5
+      md5: bc995ef9bacb814a07d06dbecad47ad0
+      size: 2160863
+    - path: src/run_seeds.py
+      hash: md5
+      md5: 097cd2d06c5a32c40fdfcb0edb023d2d
+      size: 10454
+    - path: src/train.py
+      hash: md5
+      md5: a12ccfcee94e4bd2e22e4251eab6eb20
+      size: 4593
+    params:
+      params.yaml:
+        train:
+          seeds:
+          - 7
+          - 12
+          - 21
+          - 42
+          - 101
+          - 2026
+          - 3407
+          n_splits: 5
+    outs:
+    - path: figures
+      hash: md5
+      md5: 243e4fe9c717fd58af625f34fdda43e3.dir
+      size: 237952
+      nfiles: 3
+    - path: results
+      hash: md5
+      md5: 7463f5c8cdc69b3011b85582b37c8569.dir
+      size: 26487
+      nfiles: 21

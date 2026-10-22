@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "identical_in_process": true,
+  "identical_across_processes": true,
+  "run_a": {
+    "accuracy_mean": 0.9236666666666666,
+    "f1_macro_mean": 0.9242099416146011
+  },
+  "run_b": {
+    "accuracy_mean": 0.9236666666666666,
+    "f1_macro_mean": 0.9242099416146011
+  },
+  "subprocess_runs": [
+    {
+      "accuracy_mean": 0.9236666666666666,
+      "f1_macro_mean": 0.9242099416146011
+    },
+    {
+      "accuracy_mean": 0.9236666666666666,
+      "f1_macro_mean": 0.9242099416146011
+    }
+  ],
+  "fold_accuracy": [
+    0.92,
+    0.93166667,
+    0.935,
+    0.92,
+    0.91166667
+  ]
+}

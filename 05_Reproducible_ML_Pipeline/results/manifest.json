@@ -1,0 +1,77 @@
+{
+  "experiment": "UNMSM-D5-clause-reproducibility",
+  "git_commit": "90af60657cd516ae52321df2c1d1c924d1fb7314",
+  "git_dirty": true,
+  "data": {
+    "file": "data/ledgar_subset.csv",
+    "md5": "bc995ef9bacb814a07d06dbecad47ad0",
+    "hf_revision": "c23fdff1a6bf74e0e1a71cb86f1e781d37da888c"
+  },
+  "params": {
+    "prepare": {
+      "hf_revision": "c23fdff1a6bf74e0e1a71cb86f1e781d37da888c",
+      "n_classes": 20,
+      "per_class": 150,
+      "sample_seed": 2026
+    },
+    "train": {
+      "seeds": [
+        7,
+        12,
+        21,
+        42,
+        101,
+        2026,
+        3407
+      ],
+      "n_splits": 5
+    }
+  },
+  "models": {
+    "tfidf_logreg": {
+      "features": "TF-IDF word 1-2 grams, min_df=2, max_features=50000, sublinear_tf",
+      "classifier": "LogisticRegression lbfgs C=4 max_iter=3000"
+    },
+    "majority_baseline": {
+      "features": "none",
+      "classifier": "DummyClassifier most_frequent"
+    }
+  },
+  "environment": {
+    "python": "3.13.13",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "pythonhashseed": "0",
+    "libraries": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pandas": "3.1.0",
+      "matplotlib": "3.11.2",
+      "mlflow": "3.17.2",
+      "datasets": "5.1.0",
+      "dvc": "3.67.1",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "repeatability_seed42": "passed",
+  "reference_seed42": "matched existing reference",
+  "outputs_md5": {
+    "results/fold_metrics_all.csv": "a43b4101f3fe146b528a1e67fbbd8529",
+    "results/fold_metrics_majority_baseline_seed_101.csv": "c99474bee9895b2d38d9c8fca3c56bb5",
+    "results/fold_metrics_majority_baseline_seed_12.csv": "8d3941b00fefbf117b228b30df1bc60f",
+    "results/fold_metrics_majority_baseline_seed_2026.csv": "2a7334b1ac0f8cc10d83908e992bf030",
+    "results/fold_metrics_majority_baseline_seed_21.csv": "b855c303cb58721b0221d5fb294cc849",
+    "results/fold_metrics_majority_baseline_seed_3407.csv": "e234835dfa9a3478930e185fc1d2d625",
+    "results/fold_metrics_majority_baseline_seed_42.csv": "d8126c7fe6691df9db99b37bbffdb600",
+    "results/fold_metrics_majority_baseline_seed_7.csv": "e613e439c3db741ef126cbc34f7b293b",
+    "results/fold_metrics_tfidf_logreg_seed_101.csv": "5ef47f9a3745fbcd7f0c96aae22daa25",
+    "results/fold_metrics_tfidf_logreg_seed_12.csv": "46fb050077fd1dae78edfd5167c1a0bd",
+    "results/fold_metrics_tfidf_logreg_seed_2026.csv": "768721697765262959f687ee1549744a",
+    "results/fold_metrics_tfidf_logreg_seed_21.csv": "7fa54fa34b0e48dc5d2ce4b852e0ebc5",
+    "results/fold_metrics_tfidf_logreg_seed_3407.csv": "d52e837c122949839c26ed4971889b62",
+    "results/fold_metrics_tfidf_logreg_seed_42.csv": "5b91b2ff0b474d18989b7e56eb3d41fa",
+    "results/fold_metrics_tfidf_logreg_seed_7.csv": "4534d44164c9d39d6652bce0968b8450",
+    "results/overall_stability.csv": "2fabcb73bd3809ea32d75e44f4bd086e",
+    "results/seed_summary.csv": "6528a4aa128b7f1a10d760f15321f96c"
+  }
+}

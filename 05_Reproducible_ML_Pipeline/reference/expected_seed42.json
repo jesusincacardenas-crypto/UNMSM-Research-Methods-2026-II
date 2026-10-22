@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "model": "tfidf_logreg",
+  "data_md5": "bc995ef9bacb814a07d06dbecad47ad0",
+  "accuracy_mean": 0.92367,
+  "f1_macro_mean": 0.92421
+}
